@@ -9,7 +9,7 @@
  */
 int _strlen(char *s)
 {
-	int len;
+	char len;
 
 	len = _strlen(*s);
 	ptintf("%d\n", len);
