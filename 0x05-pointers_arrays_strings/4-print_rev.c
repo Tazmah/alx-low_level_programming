@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.>
+#include <stdio.h>
 /**
  * print_rev - prints a string in reverse
  *
@@ -16,6 +16,6 @@ void print_rev(char *s)
 
 	/*print char from the last index*/
 	for (--index; index >= 0; --index)
-		_putchar(s[index]);
-	_putchar('\n');
+		putchar(s[index]);
+	putchar('\n');
 }
