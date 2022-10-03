@@ -1,23 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strdup - return pointer to a new space with the copy of the param
- * @str: param
- * @Return: value if char is not null
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ *
+ * Return: pointer of an array of chars
  */
 char *_strdup(char *str)
 {
-	int i;
-	char *s;
+	char *strout;
+	unsigned int i, j;
 
 	if (str == NULL)
 		return (NULL);
 
-	s = malloc(sizeof(str));
+	for (i = 0; str[i] != '\0'; i++)
+		;
 
-	for (i = 0; i < sizeof(str); i++)
-		s[i] = str;
+	strout = (char *)malloc(sizeof(char) * (i + 1));
 
-	free(s);
-	return (s);
+	if (strout == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
+
+	return (strout);
 }
