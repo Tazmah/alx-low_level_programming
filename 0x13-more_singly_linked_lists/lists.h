@@ -25,3 +25,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 
 
 #endif
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaf4bd902e98a7e18313088c905409bfe25c6059
